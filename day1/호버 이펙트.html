@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호버 이펙트 2</title>
+    <style>
+        body {
+            background-color: rgb(173, 255, 173);
+        }
+
+        ul {
+            display: flex;
+            margin: 50px 0;
+        }
+
+        ul > li {
+            list-style: none;
+        }
+
+        .btn {
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 24px;
+            padding: 16px 100px;
+            color: rgb(233, 143, 33);
+            border: 1px solid transparent;
+            /* transparent 보더 투명하게 변경 */
+            position: relative;
+        }
+
+        .btn::before {
+            content: "";
+            display: block;
+            position: absolute;
+            /* position: absolute; 요소를 기준으로 가상요소 정렬 */
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 1px;
+            background-color: rgb(233, 143, 33);
+            transition: 0.4s;
+        }
+
+        .btn::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0%;
+            height: 1px;
+            background-color: rgb(233, 143, 33);
+            transition: 0.4s;
+        }
+        .btn:hover::before {
+            width: 100%;
+        }
+        .btn:hover::after {
+            width: 100%;
+        }
+
+        .btn:hover {
+            border-left: 1px solid rgb(233, 143, 33);
+            border-right: 1px solid rgb(233, 143, 33);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#" class="btn">about</a>
+        </li>
+        <li>
+            <a href="#" class="btn">conteat</a>
+        </li>
+        <li>
+            <a href="#" class="btn">mail</a>
+        </li>
+    </ul>
+</body>
+</html>
