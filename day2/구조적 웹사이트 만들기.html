@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조적 웹사이트 만들기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        article {
+            border: 1px solid rgb(204, 125, 125);
+            margin: 15px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(204, 125, 125);
+            padding: 16px 32px;
+            align-items: center;
+        }
+
+        nav > ul > li {
+            list-style: none;
+            margin: 16px;
+        }
+
+        nav > ul {
+            display: flex;
+        }
+
+        nav > ul > li > a {
+            color: aqua;
+            text-decoration: none;
+            padding: 16px;
+            background-color: rgb(185, 196, 192);
+            font-size: 24px;
+            border-radius: 8px;
+        }
+
+        main {
+            display: flex;
+            width: 100%;
+            margin: 16px 0;
+        }
+        footer {
+            height: 180px;
+            background-color: rgb(204, 125, 125);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div>
+                LOGO
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">메뉴</a>
+                    </li>
+                    <li>
+                        <a href="#">메뉴</a>
+                    </li>
+                    <li>
+                        <a href="#">메뉴</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>옆집에 고양이가 침입했다!</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam eligendi, vel ipsum quo non,
+                    quae placeat ullam consectetur deserunt est saepe, ut veritatis quaerat delectus molestiae molestias
+                    officiis! Incidunt.
+                </p>
+            </article>
+            <article>
+                <h2>바다에서 쉬고있는 점박이 물범!</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia quis natus, dolore quam, dicta,
+                    eum et veniam expedita vero quisquam vitae possimus fugiat voluptatem nihil ab! Labore nam expedita
+                    quisquam.
+                </p>
+            </article>
+            <article>
+                <h2>건강을 지키는 생활습관 10가지</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus expedita ea sapiente nostrum
+                    accusamus modi ex incidunt ratione accusantium esse quasi libero molestiae assumenda quisquam,
+                    necessitatibus praesentium beatae eius placeat.
+                </p>
+            </article>
+            <article>
+                <h2>아이돌 커플 탄생?!</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur adipisci, illum fugit sint ab
+                    nihil corrupti, eligendi eius perferendis beatae accusantium est corporis nostrum repellendus. Error
+                    obcaecati distinctio ad.
+                </p>
+            </article>
+            <article>
+                <h2>종합 영양제 과연 효과 있을까?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur adipisci, illum fugit sint ab
+                    nihil corrupti, eligendi eius perferendis beatae accusantium est corporis nostrum repellendus. Error
+                    obcaecati distinctio ad.
+                </p>
+            </article>
+            <article>
+                <h2>월요일 직장인 피로도 99%라는 연구결과...</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur adipisci, illum fugit sint ab
+                    nihil corrupti, eligendi eius perferendis beatae accusantium est corporis nostrum repellendus. Error
+                    obcaecati distinctio ad.
+                </p>
+            </article>
+        </section>
+        <aside>
+            <h2>Right aside</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quibusdam, esse, harum praesentium
+                enim exercitationem ipsam ducimus accusamus magni fugiat architecto vel debitis iste qui dicta
+                laboriosam ab non ipsa.
+            </p>
+            <div>
+                <input type="text" placeholder="이름 입력">
+                <button type="submit">제출</button>
+            </div>
+            <div>
+                <h3>광고</h3>
+                <p>광고내용</p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        푸터입니다.
+    </footer>
+</body>
+
+</html>

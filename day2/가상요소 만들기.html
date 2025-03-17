@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소 만들기</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(188, 247, 227);
+        }
+
+        .nav_btn > .ul_btn > .li_btn > a{
+            list-style: none;
+        }
+
+        .nav_btn {
+            font-size: 20px;
+            list-style: none;
+        }
+
+        .nav_btn:hover {
+            background-color: rgb(86, 153, 153);
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="nav_btn">
+        <ul class="ul_btn">
+            <li class="li_btn">
+                <a href="#">HTML</a>
+                <ol>
+                    <li>
+                        <a href="#">sdk</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="#">CSS</a>
+                <ol>
+                    <li>
+                        <a href="#">sdk</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="#">JS</a>
+                <ol>
+                    <li>
+                        <a href="#">sdk</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="#">UX/UI</a>
+                <ol>
+                    <li>
+                        <a href="#">sdk</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="#">Por</a>
+                <ol>
+                    <li>
+                        <a href="#">sdk</a>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

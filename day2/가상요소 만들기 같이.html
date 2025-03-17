@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(162, 238, 213);
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            list-style: none;
+        }
+        li > a {
+            width: 200px;
+            display: inline-block;
+            font-size: 20px;
+            text-decoration: none;
+            color: aliceblue;
+            height: 150px;
+            text-align: center;
+            margin: 16px;
+        }
+
+        span {
+            display: block;
+            font-weight: 400;
+        }
+
+        a span:first-child {
+            font-size: 25px;
+        }
+        a span:last-child {
+            color: rgb(86, 156, 133);
+            font-size: 20px;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        a:hover span:last-child {
+            opacity: 1;
+            transform: translateY(25px);
+        }
+
+        a span:last-child::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            margin-top: 30px;
+        }
+
+        /* a span:first-child::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            display: block; 이것도 가능
+        } */
+        a::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            margin-bottom: 16px;
+            opacity: 0.5;
+            transition: 0.3s;
+        }
+
+        a:hover::before {
+            height: 5px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">
+                <span>HTML</span>
+                <span>MAKE UP</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>HTML</span>
+                <span>MAKE UP</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>HTML</span>
+                <span>MAKE UP</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>HTML</span>
+                <span>MAKE UP</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>HTML</span>
+                <span>MAKE UP</span>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
