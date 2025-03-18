@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            animation-name: boxanimation;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            /* animation-delay브라우저 열고 대기시간. */
+            animation-iteration-count: infinite;
+            /* animation-iteration-count 1~~ 애니메이션 반복 시간 infinite 무한반복*/
+            animation-direction: normal;
+            /* animation-direction: reverse 애니메이션 효과 역순 normal은 그냥*/
+            animation-fill-mode: forwards;
+            /* animation-fill-mode 애니메이션 효과 중간에 멈춤 */
+            animation-play-state: running;
+            /* animation-play-state: running;이 기본값 */
+            
+            /* animation: name이름 duration지속시간 timing-function타이밍 함수 delay 대기시간 interation-tount 반복횟수 direction 애니메이션 방향 fill-mode 전후상태 play-state 재생정지*/
+           animation: boxanimation 6s linear 1s 1 reverse forwards reverse;
+        }
+
+        .box:nth-child(1) {
+            background-color: rgb(156, 243, 156);
+            animation-timing-function: linear;
+        }
+        .box:nth-child(2) {
+            background-color: rgb(119, 216, 119);
+            animation-timing-function: ease;
+        }
+        .box:nth-child(3) {
+            background-color: rgb(84, 192, 84);
+            animation-timing-function: ease-in;
+        }
+        .box:nth-child(4) {
+            background-color: rgb(38, 146, 38);
+            animation-timing-function: ease-out;
+        }
+        .box:nth-child(5) {
+            background-color: rgb(13, 61, 13);
+            animation-timing-function: ease-in-out;
+        }
+        .box:nth-child(6) {
+            background-color: rgb(3, 44, 3);
+            animation-timing-function: cubic-bezier(0, 0.79, 0.58, 1);
+        }
+
+        .box:nth-child(1):hover {
+            animation-play-state: paused;
+            /* 커서를 가져다 대면 중간에 멈출 수 잇음 */
+        }
+
+        @keyframes boxanimation {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- https://webclub.tistory.com/621 css애니메이션 -->
+    <div class="box">linear : 일정하게</div>
+    <div class="box">ease : 느리게 - 빠르게</div>
+    <div class="box">ease-in : 빠르게 - 느리게</div>
+    <div class="box">ease-out : 느리게 - 빠르게</div>
+    <div class="box">ease-in-out : 느리게 - 빠르게 - 느리게</div>
+    <div class="box">자신만의 값을 정의</div>
+</body>
+</html>
