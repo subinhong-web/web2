@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴회전실습</title>
+    <script src="https://kit.fontawesome.com/6f1cb9abc0.js" crossorigin="anonymous"></script>
+    <style>
+        section {
+            display: flex;
+            background-color: rgb(177, 174, 170);
+            justify-content: space-between;
+        }
+
+        section>ul {
+            display: flex;
+            line-height: 20px;
+            padding: 10px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        section > div {
+            font-size: 25px;
+            color: rgb(246, 246, 247);
+            padding: 15px;
+        }
+
+        li > a {
+            color: rgb(246, 246, 247);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div>
+                Logo
+            </div>
+            <ul>
+                <li>
+                    <a href="#">메뉴1</a>
+                </li>
+                <li>
+                    <a href="#">메뉴2</a>
+                </li>
+                <li>
+                    <a href="#">메뉴3</a>
+                </li>
+                <li>
+                    <a href="#">메뉴4</a>
+                </li>
+            </ul>
+            <button>
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </section>
+    </header>
+</body>
+
+</html>

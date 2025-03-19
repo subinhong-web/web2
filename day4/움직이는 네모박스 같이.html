@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation_box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(143, 216, 216);
+            border-radius: 24px;
+            animation: box_square_rotate 5s ease-in infinite; 
+        }
+
+        @keyframes box_square_rotate {
+            20% {
+                transform: translateX(200px);
+            }
+
+            60% {
+                transform: translate(200px,200px);
+            }
+
+            80% {
+                transform: translate(0,200px);
+            }
+
+            100% {
+                transform: translate(0,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation_box"></div>
+    <!-- 내일 슬라이드 기능 구현 (버튼을 클릭하면 이미지 슬라이드가 지나감.) -->
+</body>
+</html>

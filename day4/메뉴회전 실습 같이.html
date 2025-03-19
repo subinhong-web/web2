@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴회전 실습 같이</title>
+    <script src="https://kit.fontawesome.com/6f1cb9abc0.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background: #ddd;
+            padding: 24px 48px;
+            color: rgb(62, 99, 86);
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        .plus_btn > button{
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: rgb(62, 99, 86);
+            font-size: 20px;
+        }
+
+        .plus_btn > button:hover i {
+            animation-name: btn;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+            /* animation-fill-mode: forwards; 애니메이션 끝나는 값 유지 */
+        }
+        @keyframes btn {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(225deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">logo</h1>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+        </ul>
+        <div class="plus_btn">
+            <button>
+                <i class="fa-solid fa-plus fa-2xl"></i>
+            </button>
+        </div>
+    </header>
+</body>
+</html>

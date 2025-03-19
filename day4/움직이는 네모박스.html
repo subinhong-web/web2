@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>움직이는 네모박스</title>
+    <style>
+
+        .animation_box {
+            background-color: rgb(148, 233, 215);
+            width: 50px;
+            height: 50px;
+            animation-name: box
+        }
+
+        @keyframes box {
+            0% {
+                transform: translateX(0%);
+            }
+
+            20% {
+                transform: translateX(40%);
+            }
+
+            40% {
+                transform: translateY(-40%);
+            }
+
+            60% {
+                transform: translateX(-40%);
+            }
+
+            80% {
+                transform: translateX(40%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation_box"></div>
+</body>
+</html>
