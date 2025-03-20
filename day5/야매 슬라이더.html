@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>야매 슬라이더</title>
+    <style>
+        /* ul의 width 1200px li width 268px*/
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            display: block;
+            margin: 50px auto;
+            padding: 15px;
+            background-color: rgb(54, 153, 120);
+            font-size: 25px;
+            border-radius: 8px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px gray;
+        }
+        
+        button:focus + ul li {
+            animation: slide 5s forwards;
+            animation-timing-function: cubic-bezier(1,-0.19, 0.3, 0.92);
+        }
+
+        li {
+            min-width: 268px;
+            /* min-width 가져야 하는 최소값으로 부모요소에 구애받지 않음.*/
+            height: 150px;
+            list-style: none;
+            margin: 0 16px;
+        }
+        
+        ul {
+            width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+
+        li:nth-child(1) {
+            background: url(./0dca6b7ec5f889ca5d0d980b212d1e12_1642572474_2077.jpg);
+            background-size: cover;
+        }
+        li:nth-child(2) {
+            background: url(./20240515ceva_experts4.jpg);
+            background-size: cover;
+        }
+        li:nth-child(3) {
+            background: url(./7170113c6a983.jpg);
+            background-size: cover;
+        }
+        li:nth-child(4) {
+            background: url(./AdobeStock_101112878-scaled.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(5) {
+            background: url(./art_16599350966819_1053f2.jpg);
+            background-size: cover;
+        }
+        li:nth-child(6) {
+            background: url(./istockphoto-1409355480-612x612.jpg);
+            background-size: cover;
+        }
+        li:nth-child(7) {
+            background: url(./shutterstock_1844153299-1024x683-1.png);
+            background-size: cover;
+        }
+        li:nth-child(8) {
+            background: url(./고양이-설사-900x600.jpg);
+            background-size: cover;
+        }
+
+        @keyframes slide {
+            20% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translate(-1200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <button>고양이가 지나가요</button>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+
+</html>

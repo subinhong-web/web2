@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    <style>
+        .pc_box {
+            display: flex;
+        }
+
+        .pc_meida {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(155, 219, 198);
+            margin: 24px;
+        }
+
+        @media (max-width: 1024px) {
+            .pc_box {
+                flex-wrap: wrap;
+            }
+
+            .pc_meida {
+                width: 100%;
+            }
+        }
+
+        /* min-width는 최소값  max-width는 최대값*/
+        .mo_meida {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(61, 128, 105);
+        }
+
+        @media (min-width: 360px) {
+            .mo_meida {
+                width: 50px;
+                height: 100px;
+            }
+        }
+
+        @media (min-width: 760px) {
+            .mo_meida {
+                width: 500px;
+                height: 100px;
+            }
+        }
+
+        .mo_pc_meida {
+            width: 500px;
+            height: 500px;
+            background-color: rgb(22, 65, 50);
+        }
+
+        @media (min-width: 760px) and (max-width: 1024px) {
+            .mo_pc_meida {
+                background-color: springgreen;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pc_box">
+        <div class="pc_meida"></div>
+        <div class="pc_meida"></div>
+        <div class="pc_meida"></div>
+    </div>
+    <div class="mo_meida"></div>
+    <div class="mo_pc_meida"></div>
+</body>
+
+</html>
