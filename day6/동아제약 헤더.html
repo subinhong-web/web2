@@ -12,17 +12,32 @@
             padding: 0;
         }
 
-        body {
+        .top {
             background-image: url(./동아배경.jpg);
-            background-size: cover;
         }
 
         .header_bottom {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            padding: 10px 10px;
-            border: 1px solid black;
+        }
+
+        .header_bottom::before {
+            content: "";
+            width: 1px;
+            height: 100%;
+            background-color: black;
+            display: block;
+            margin: 0;
+        }
+
+        .header_top::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            display: block;
+            margin-bottom: 0;
         }
 
         ul {
@@ -32,7 +47,6 @@
         li {
             list-style: none;
             margin: 10px;
-            font-size: 15px;
         }
 
         .header_top>nav>ul {
@@ -80,8 +94,11 @@
                 display: none;
             }
 
+            .header_bottom::before,
+            .header_top::after {
+                display: block;
+            }
         }
-        
     </style>
 </head>
 
