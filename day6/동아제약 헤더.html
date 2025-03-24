@@ -14,22 +14,24 @@
 
         .top {
             background-image: url(./동아배경.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 1500px;
         }
 
         .header_bottom {
             display: flex;
-            justify-content: space-around;
-            align-items: center;
+            justify-content: space-between;
+            align-items: flex-start;
         }
 
-        .header_bottom::before {
+        /* .header_bottom::before {
             content: "";
-            width: 1px;
-            height: 100%;
+            width: 100%;
+            height: 1px;
             background-color: black;
             display: block;
-            margin: 0;
-        }
+        } */
 
         .header_top::after {
             content: "";
@@ -37,7 +39,6 @@
             height: 1px;
             background-color: black;
             display: block;
-            margin-bottom: 0;
         }
 
         ul {
@@ -94,10 +95,6 @@
                 display: none;
             }
 
-            .header_bottom::before,
-            .header_top::after {
-                display: block;
-            }
         }
     </style>
 </head>
@@ -169,22 +166,16 @@
                                 고객지원
                             </a>
                         </li>
-                        <li>
-                            <div class="botton_btn">
-                                <button>
-                                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
-                                </button>
-                            </div>
-                        </li>
                     </ul>
-
-
                 </nav>
+
                 <div class="end">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </button>
                     <button>
                         <i class="fa-solid fa-globe fa-xl"></i>
                     </button>
-
                     <button>
                         <i class="fa-solid fa-bars fa-xl"></i>
                     </button>
