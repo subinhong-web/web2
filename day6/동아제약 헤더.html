@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아제약 헤더 만들기</title>
+    <script src="https://kit.fontawesome.com/6f1cb9abc0.js" crossorigin="anonymous"></script>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(./동아배경.jpg);
+        }
+
+        .header_bottom {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+        }
+
+        ul {
+            margin: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            list-style: none;
+            margin: 10px;
+            font-size: 12px;
+        }
+
+        .header_top > nav > ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .header_top > nav > ul > li {
+            font-size: 12px;
+        }
+
+        .end {
+            margin: 0 10px;
+        }
+
+        @media (max-width: 1000px) {
+            .top {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (min-width: 360px) and (max-width: 1000px) {
+            .top {
+                flex-wrap: wrap;
+            }
+
+            .header_top {
+                display: none;
+            }
+
+            ul>li {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="top">
+
+    <header>
+        <div class="header_top">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            준법경영
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            판매약국찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            감사제보하기
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header_bottom">
+            <h2>
+                <img src="./동아로고.svg" alt="동아제약 헤더 로고">
+            </h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            회사소개
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            브랜드
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            R&B
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            정도경영
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            뉴스룸
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            인재채용
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            고객지원
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="end">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </button>
+    
+                <button>
+                    <i class="fa-solid fa-globe fa-xl"></i>
+                </button>
+    
+                <button>
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+</section>
+
+</body>
+
+</html>
