@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회전하는 텍스트</title>
+    <style>
+        @font-face {
+            font-family: 'Gyeonggi_Title_Medium';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        section {
+            font-family: 'Gyeonggi_Title_Medium';
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .animation_text {
+            width: max-content;
+            /* max-content는 줄바꿈을 하지 않고 최대 넓이가 담고 있는 컨텐츠에 의해 영역을 차지함. */
+            font-size: 124px;
+            padding: 24px;
+        }
+
+        .roll1 {
+            animation: roll 40s infinite linear;
+        }
+
+        .roll2 {
+            animation: roll2 40s infinite linear;
+        }
+
+        @keyframes roll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes roll2 {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="animation_text roll1">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magni dolor id quidem natus error,
+                reprehenderit sunt odio corporis doloremque voluptas! Iusto ad perspiciatis laudantium eos soluta
+                dolorum molestiae eveniet.
+            </p>
+        </div>
+        <div class="animation_text roll2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolor dolores voluptatibus vero, fugiat
+                magnam quidem sint veniam, quasi odio, ut perspiciatis expedita repellat unde. Labore quam commodi in
+                similique!
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
